@@ -28,12 +28,11 @@
   font-weight: bold;
   color: var(--text-danger);
   font-size: 12px;
+  border-bottom: 2px solid var(--text-danger);
 }
 .deskProduk {
   text-align: center;
-  font-size: 11px;
   margin-top: 5px;
-  color: var(--text-dark);
 }
 
 .namaLink span {
@@ -59,7 +58,22 @@
 }
 
 @media (max-width: 576px) {
+  .judulProduk {
+    text-align: center;
+    background-color: var(--text-dark);
+    color: var(--text-white);
+    font-size: 9px;
+    padding: 8px;
+    border-radius: 50px;
+  }
+  .deskProduk span {
+    font-weight: bold;
+    color: var(--text-danger);
+    font-size: 9px;
+    text-align: center;
+    border-bottom: 2px solid var(--text-danger);
+  }
   .namaLink span {
-    font-size: 8px;
+    font-size: 7px;
   }
 }

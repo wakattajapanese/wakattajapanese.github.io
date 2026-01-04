@@ -73,7 +73,10 @@
     text-align: center;
     border-bottom: 2px solid var(--text-danger);
   }
+  a.namaLink {
+    padding: 4px;
+  }
   .namaLink span {
-    font-size: 7px;
+    font-size: 9px;
   }
 }

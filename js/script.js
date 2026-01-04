@@ -232,3 +232,70 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// ? ----------------------------------------------------------------------------------------------------------------
+document.addEventListener("DOMContentLoaded", function () {
+  // Dapatkan semua gambar dengan kelas gambarProduk
+  const productImages = document.querySelectorAll(".gambarProduk");
+  const overlayElements = document.querySelectorAll(".img-overlay");
+
+  // Buat modal Bootstrap secara dinamis
+  const modalHTML = `
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="imageModalLabel">Flashcard Hiragana</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center p-0">
+            <img id="modalImage" src="" alt="Preview Produk" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+
+  // Tambahkan modal ke body
+  document.body.insertAdjacentHTML("beforeend", modalHTML);
+
+  // Inisialisasi modal Bootstrap
+  const imageModal = new bootstrap.Modal(document.getElementById("imageModal"));
+
+  // Fungsi untuk menampilkan modal
+  function showModal(imgElement) {
+    const modalImg = document.getElementById("modalImage");
+    const cardTitle = imgElement.closest(".card").querySelector(".judulProduk");
+
+    // Set gambar untuk modal
+    modalImg.src = imgElement.src;
+    modalImg.alt = imgElement.alt;
+
+    // Update judul modal
+    const modalTitle = document.querySelector("#imageModalLabel");
+    if (cardTitle) {
+      modalTitle.textContent = cardTitle.textContent;
+    }
+
+    // Tampilkan modal
+    imageModal.show();
+  }
+
+  // Tambahkan event listener untuk setiap gambar
+  productImages.forEach((img) => {
+    img.addEventListener("click", function () {
+      showModal(this);
+    });
+    img.style.cursor = "pointer";
+  });
+
+  // Tambahkan event listener untuk overlay juga
+  overlayElements.forEach((overlay) => {
+    overlay.addEventListener("click", function () {
+      const img = this.closest(".card-img-container").querySelector(
+        ".gambarProduk"
+      );
+      showModal(img);
+    });
+  });
+});

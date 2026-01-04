@@ -1,0 +1,65 @@
+:root {
+  --text-dark: #233446;
+  --text-danger: #e63946;
+  --text-white: #ffffff;
+  --bg-light: #fafafa;
+}
+
+.btn-orange {
+  background-color: #fa891a;
+  color: var(--bg-light);
+}
+
+.btn-orange:hover {
+  background-color: #e07b16;
+  color: var(--bg-light);
+  transform: translateY(-2px);
+}
+
+.judulProduk {
+  text-align: center;
+  background-color: var(--text-dark);
+  color: var(--text-white);
+  font-size: 12px;
+  padding: 8px;
+  border-radius: 50px;
+}
+.deskProduk span {
+  font-weight: bold;
+  color: var(--text-danger);
+  font-size: 12px;
+}
+.deskProduk {
+  text-align: center;
+  font-size: 11px;
+  margin-top: 5px;
+  color: var(--text-dark);
+}
+
+.namaLink span {
+  font-size: 10px;
+}
+
+.gambarProduk {
+  height: 240px;
+  object-fit: cover;
+  padding: 5px;
+}
+
+@media (max-width: 992px) {
+  .namaLink span {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 768px) {
+  .namaLink span {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 576px) {
+  .namaLink span {
+    font-size: 8px;
+  }
+}

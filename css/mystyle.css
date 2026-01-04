@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+:root {
+  --primary-color: #ffab00;
+  --secondary-color: #233446;
+  --accent-color: #a8dadc;
+  --light-color: #f1faee;
+  --dark-color: #2b2d42;
+  --gradient-primary: linear-gradient(135deg, #e63946 0%, #ff6b6b 100%);
+  --gradient-secondary: linear-gradient(135deg, #1d3557 0%, #457b9d 100%);
+}
+* {
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 13px;
+}
+
+/* Halaman Beranda */
+/* halaman header / navbar untuk logo sebelah kiri */
+.logoName {
+  font-family: "Rampart One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+}
+/* ------------------------------------------------------------------------------------ */
+
+@media (max-width: 991px) {
+  .sidebar {
+    background-color: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+  }
+}
+
+/* Halaman Beranda Selesai */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Footer Styles */
+/* Footer */
+.footer {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 70px 0 30px;
+}
+
+.footer h5 {
+  margin-bottom: 25px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.footer h5::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: var(--primary-color);
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: white;
+  padding-left: 5px;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: white;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background: var(--primary-color);
+  transform: translateY(-3px);
+}
+
+.copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+  margin-top: 50px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}

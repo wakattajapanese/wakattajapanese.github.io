@@ -18,7 +18,7 @@
 
     <meta name="description" content="" />
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="img/WAKATTA JAPANESE LOGO-01.png" />
+    <link rel="icon" type="image/x-icon" href="img/LOGO.png" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -60,8 +60,8 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="img/WAKATTA JAPANESE LOGO-01.png" alt="" width="40" />
+        <a class="navbar-brand fs-4" href="index.html">
+          <img src="img/LOGO.png" alt="" width="40" />
           <span class="logoName">Wakatta Japanese</span>
         </a>
         <button
@@ -80,7 +80,7 @@
           id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel"
         >
-          <div class="offcanvas-header">
+          <div class="offcanvas-header border-bottom">
             <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Wakatta Japanese</h5>
             <button
               type="button"
@@ -115,6 +115,9 @@
                       <li>
                         <a class="dropdown-item" href="produk-flashcard-japan-katakana.html">Flashcard Katakana</a>
                       </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Flashcard Kanji</a>
+                      </li>
                       <!-- <li><a class="dropdown-item" href="#">Flashcard Kosakata</a></li>
                       <li><a class="dropdown-item" href="#">Flashcard Kanji</a></li>
                       <li><a class="dropdown-item" href="#">Flashcard Grammar</a></li> -->
@@ -126,6 +129,7 @@
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
+                  data-bs-auto-close="outside"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -134,7 +138,15 @@
                   Belajar Yuk!
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Hiragana</a></li>
+                  <li class="dropend">
+                    <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Hiragana</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Huruf Hiragana</a></li>
+                      <li><a class="dropdown-item" href="#">Hiragana Dakuon</a></li>
+                      <li><a class="dropdown-item" href="#">Hiragana Handakuon</a></li>
+                      <li><a class="dropdown-item" href="#">Hiragana Youon</a></li>
+                    </ul>
+                  </li>
                   <li><a class="dropdown-item" href="#">Katakana</a></li>
                 </ul>
               </li>
@@ -149,7 +161,7 @@
                   Tentang Wakatta
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Profil Wakatta</a></li>
+                  <li><a class="dropdown-item" href="profile-wakatta.html">Profil Wakatta</a></li>
                   <li><a class="dropdown-item" href="#">Visi & Misi</a></li>
                 </ul>
               </li>
@@ -597,7 +609,7 @@
         <div class="row">
           <div class="col-lg-4 mb-4 mb-lg-0">
             <a class="navbar-brand mb-3" href="#">
-              <img src="img/WAKATTA JAPANESE LOGO-01.png" alt="Wakatta Japanese Logo" width="40" />
+              <img src="img/LOGO.png" alt="Wakatta Japanese Logo" width="40" />
               <span class="logoName">Wakatta Japanese</span>
             </a>
             <p class="mb-4" style="color: rgba(255, 255, 255, 0.7)">
@@ -645,7 +657,7 @@
               </li>
               <li class="mb-2">
                 <i class="fas fa-phone me-2"></i>
-                +62 812 3456 7890
+                +62 895 0226 8478
               </li>
             </ul>
           </div>

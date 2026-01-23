@@ -43,7 +43,8 @@
   padding: 70px 0 30px;
 }
 
-.footer h5 {
+.footer h5,
+.profile-wakatta h2 {
   margin-bottom: 25px;
   position: relative;
   padding-bottom: 10px;
@@ -55,6 +56,16 @@
   bottom: 0;
   left: 0;
   width: 50px;
+  height: 3px;
+  background: var(--primary-color);
+}
+
+.profile-wakatta h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 35%;
+  width: 30%;
   height: 3px;
   background: var(--primary-color);
 }

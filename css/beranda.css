@@ -125,7 +125,9 @@
   font-weight: 500;
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.3s ease, transform 0.3s ease !important;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease !important;
   line-height: 1.4;
 }
 
@@ -141,7 +143,9 @@
 }
 
 .changing-text {
-  transition: opacity 0.3s ease, transform 0.3s ease !important;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease !important;
 }
 
 .changing-language {

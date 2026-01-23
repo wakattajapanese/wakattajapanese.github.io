@@ -1,0 +1,68 @@
+/* ===============================
+   PROFILE WAKATTA - SECTION
+================================ */
+
+/* WRAPPER BACKGROUND */
+.profile-wakatta-wrapper {
+  background-image: url("../img/beranda/korea1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 90px 0;
+}
+
+/* OVERLAY */
+.profile-wakatta-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+/* SECTION UTAMA */
+.profile-wakatta {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.profile-wakatta p {
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+.highlight-box {
+  background: #fff3cd;
+  border-left: 5px solid #ffc107;
+  padding: 15px 20px;
+  border-radius: 8px;
+}
+
+.feature-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.feature-list li {
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.wakatta-logo {
+  max-width: 80%;
+  transition: transform 0.3s ease;
+}
+
+.wakatta-logo:hover {
+  transform: scale(1.05);
+}
+
+.info-card {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
